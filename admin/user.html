@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa"><head>
+    <meta charset="UTF-8">
+    <title>کاربران</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/admin-stylesheet.css" rel="stylesheet" media="screen">
+    <link href="../fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+<div id="container">
+    <header id="header" class="navbar navbar-static-top">
+        <div class="container-fluid">
+            <div id="header-logo" class="navbar-header"><a href="#" class="navbar-brand"><img src="images/logo.png" alt="ملی مس" title="ملی مس"></a></div>
+            <a href="#" id="button-menu" class="hidden-md hidden-lg"><span class="fa fa-bars"></span></a>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li class="flex-center p-2"><img src="images/profile-45x45.png" alt="محمد اسکندری" title="admin" id="user-profile" class="rounded-circle">محمد اسکندری</li>
+                <li><a href="#"><i class="fa fa-sign-out"></i> <span class="hidden-xs hidden-sm hidden-md">خروج</span></a></li>
+            </ul>
+        </div>
+    </header>
+    <nav id="column-left">
+        <div id="navigation"><span class="fa fa-bars ml-1"></span> منو مدیریت</div>
+        <ul id="menu" class="in">
+            <li id="menu-dashboard"><a href=""><i class="fa fa-dashboard fw"></i> پیشخوان</a></li>
+            <li id="menu-customer">
+                <a href="#collapse6" data-toggle="collapse" class="parent collapsed"><i class="fa fa-vcard fw"></i>مراجعه‌کنندگان</a>
+                <ul id="collapse6" class="collapse">
+                    <li><a href="#">لیست مراجعه‌کنندگان</a></li>
+                    <li><a href="#">گروه مراجعه‌کنندگان</a></li>
+                </ul>
+            </li>
+            <li id="menu-user">
+                <a href="#collapse7" data-toggle="collapse" class="parent collapsed"><i class="fa fa-user fw"></i>کاربران</a>
+                <ul id="collapse7" class="collapse">
+                    <li><a href="#">لیست کاربران</a></li>
+                    <li><a href="#">گروه کاربران</a></li>
+                </ul>
+            </li>
+            <li id="menu-system" class="active"><a href="#collapse8" data-toggle="collapse" class="parent collapsed"><i class="fa fa-cog fw"></i> منو</a>
+                <ul id="collapse8" class="collapse in">
+                    <li><a href="#">زیر منو سطح یک</a></li>
+                    <li class="active">
+                        <a href="#collapse8-1" data-toggle="collapse" class="parent collapsed">زیر منو سطح یک</a>
+                        <ul id="collapse8-1" class="collapse in">
+                            <li class="active"><a href="#">زیر منو سطح دو</a></li>
+                            <li><a href="#">زیر منو سطح دو</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="content">
+        <div class="page-header">
+            <div class="container-fluid">
+                <div class="pull-left">
+                    <a href="#" data-toggle="tooltip" title="" class="btn btn-primary" data-original-title="افزودن جدید"><i class="fa fa-plus"></i></a>
+                    <button type="button" title="" class="btn btn-danger" data-original-title="حذف"><i class="fa fa-trash-o"></i></button>
+                </div>
+                <h1>کاربران</h1>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">خانه</a></li>
+                    <li class="breadcrumb-item active"><a href="#">کاربران</a></li>
+                </ol>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-title h5"><i class="fa fa-list"></i> لیست کاربر</span>
+                </div>
+                <div class="card-body">
+                    <form action="http://127.0.0.1/kadoeiiii/admin/index.php?route=user/user/delete&amp;user_token=RIPuHwfCSl8cJp26ppgezoQ8xhJKQCn8" method="post" enctype="multipart/form-data" id="form-user">
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-hover">
+                                <thead>
+                                <tr>
+                                    <td style="width: 1px;" class="text-center"><input type="checkbox" onclick="$('input[name*=\'selected\']').prop('checked', this.checked);"></td>
+                                    <td><a href="#" class="asc">نام کاربری</a></td>
+                                    <td><a href="#">وضعيت</a></td>
+                                    <td><a href="#">تاريخ افزودن</a></td>
+                                    <td class="text-right">عملیات</td>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="text-center">                    <input type="checkbox" name="selected[]" value="1">
+                                    </td>
+                                    <td>admin</td>
+                                    <td>فعال</td>
+                                    <td>دوشنبه 30 دی 1398 - 16:43:01</td>
+                                    <td class="text-right"><a href="#" data-toggle="tooltip" title="" class="btn btn-primary" data-original-title="ویرایش"><i class="fa fa-pencil"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">                    <input type="checkbox" name="selected[]" value="2">
+                                    </td>
+                                    <td>ghasemi-nik</td>
+                                    <td>فعال</td>
+                                    <td>چهارشنبه 27 شهریور 1398 - 07:04:33</td>
+                                    <td class="text-right"><a href="#" data-toggle="tooltip" title="" class="btn btn-primary" data-original-title="ویرایش"><i class="fa fa-pencil"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">                    <input type="checkbox" name="selected[]" value="3">
+                                    </td>
+                                    <td>mohammadi</td>
+                                    <td>فعال</td>
+                                    <td>پنجشنبه 28 شهریور 1398 - 07:59:23</td>
+                                    <td class="text-right"><a href="#" data-toggle="tooltip" title="" class="btn btn-primary" data-original-title="ویرایش"><i class="fa fa-pencil"></i></a></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </form>
+                    <div class="row">
+                        <div class="col-sm-6 text-left"></div>
+                        <div class="col-sm-6 text-right">نمايش 1 تا 3 از 3 (1 صفحه)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">تمامی حقوق برای <a target="_blank" href="#">ملی مس</a> محفوظ است. © 1399 <br>نسخه 1.0.0</footer></div>
+
+
+<script src="../js/jquery-slim.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>
